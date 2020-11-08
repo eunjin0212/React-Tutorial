@@ -1,3 +1,12 @@
-const button = document.querySelector("button");
+function sayHello(name = "eunjin") {
+  return "hello " + name;
+}
 
-button.addEventListener("click", (event) => console.log(event));
+//Arrow Function
+const sayHello2 = (name = "eunjin!") => `hello ${name}`;
+
+const eunjin = sayHello();
+const eunjin2 = sayHello2();
+
+console.log(eunjin);
+console.log(eunjin2);
