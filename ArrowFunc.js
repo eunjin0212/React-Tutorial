@@ -1,12 +1,8 @@
-function sayHello(name = "eunjin") {
-  return "hello " + name;
-}
+const human = {
+  name: "eunjin",
+  lastName: "Kim",
+  nationality: "Wish i was Korean",
+};
 
-//Arrow Function
-const sayHello2 = (name = "eunjin!") => `hello ${name}`;
-
-const eunjin = sayHello();
-const eunjin2 = sayHello2();
-
-console.log(eunjin);
-console.log(eunjin2);
+const { name, lastName } = human;
+console.log(name, lastName);
