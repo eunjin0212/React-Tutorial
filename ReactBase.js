@@ -1,18 +1,16 @@
-const days = ["Mon", "Tues", "Wed"];
-const otherDays = ["Thu", "Fri", "Sat"];
-const allDays = [...days, ...otherDays];
+class Human {
+  constructor(name, lastName) {
+    this.name = name;
+    this.lastName = lastName;
+  }
+}
+const eunjin = new Human("eunjin", "kim");
+console.log(eunjin.name);
 
-console.log(allDays);
-
-const ob = {
-  first: "hi",
-  second: "hello",
-};
-const ab = {
-  thrid: "bye",
-};
-const two = {
-  ...ob,
-  ...ab,
-};
-console.log(two);
+class Baby extends Human {
+  cry() {
+    console.log("Waaaaa");
+  }
+}
+const myBaby = new Baby("mini", "me");
+console.log(myBaby.cry());
