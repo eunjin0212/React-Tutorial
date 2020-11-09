@@ -1,4 +1,5 @@
-let posts = ["hi", "hello", "bye"];
-posts.forEach((post) => console.log(post));
-posts.push("new");
-console.log(posts);
+let greetings = ["hi", "hello", "bye", "Suup", "eunjin"];
+if (greetings.includes("hello")) {
+  greetings.push("hello!");
+}
+console.log(greetings, greetings.reverse());
