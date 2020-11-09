@@ -11,6 +11,9 @@ class Baby extends Human {
   cry() {
     console.log("Waaaaa");
   }
+  sayName() {
+    console.log(`My name is ${this.name}`);
+  }
 }
 const myBaby = new Baby("mini", "me");
-console.log(myBaby.cry());
+console.log(myBaby.cry(), myBaby.sayName());
